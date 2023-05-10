@@ -46,7 +46,7 @@ https://topis.seoul.go.kr/refRoom/openRefRoom_1.do
 
 
 ### 7. 결과
-![스크린샷 2023-05-11 오전 1 41 51](https://github.com/YoungMinSW/Team_project/assets/109095108/5a6d43a3-8313-4193-9367-6db4734e6a26)
+
 ![스크린샷 2023-05-11 오전 1 42 00](https://github.com/YoungMinSW/Team_project/assets/109095108/662412a3-15e2-47a7-9a60-840a5ca3694c)
 ![스크린샷 2023-05-11 오전 1 42 09](https://github.com/YoungMinSW/Team_project/assets/109095108/ba1f8797-1a5f-40d2-9932-970805c1ce27)
 ![스크린샷 2023-05-11 오전 1 42 33](https://github.com/YoungMinSW/Team_project/assets/109095108/a033cf26-21af-4bfd-81e8-e8bd645a5e7b)
