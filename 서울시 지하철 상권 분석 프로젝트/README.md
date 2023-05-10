@@ -36,7 +36,6 @@
 - Pandas,Mathplotlib,Numpy,Seaborn
 
 
-
 ### 5. 결과
 ![스크린샷 2023-05-10 오후 11 48 19](https://github.com/YoungMinSW/Team_project/assets/109095108/84a0a6eb-5d1d-4c15-b4b3-9de3510dc576)
 ![스크린샷 2023-05-10 오후 11 51 42](https://github.com/YoungMinSW/Team_project/assets/109095108/0abab491-e4d4-400b-8b07-daeebcbaf242)
@@ -44,8 +43,6 @@
 ![스크린샷 2023-05-10 오후 11 55 40](https://github.com/YoungMinSW/Team_project/assets/109095108/66d22fd9-50a5-429b-9a45-9af77e49213e)
 ![스크린샷 2023-05-10 오후 11 56 18](https://github.com/YoungMinSW/Team_project/assets/109095108/012e8f03-517f-4966-9736-b724a362b4f4)
 ![스크린샷 2023-05-10 오후 11 56 38](https://github.com/YoungMinSW/Team_project/assets/109095108/56f47bb9-df23-4224-832f-817848e00862)
-
-
 
 
 
