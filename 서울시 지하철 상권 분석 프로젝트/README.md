@@ -31,10 +31,9 @@
 대료 columns를 사용한다
 
 
-
-
-### 4. 사용된 기술
-
+### 4. 사용된 툴/기술
+- Jupyter/Google Colab/Google drive/Excel
+- Pandas,Mathplotlib,Numpy,Seaborn
 
 
 
@@ -42,7 +41,5 @@
 
 
 
-
-### 6. 대시보드
 
 
