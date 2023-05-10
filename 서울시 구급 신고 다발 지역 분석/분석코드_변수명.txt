@@ -1,0 +1,87 @@
+다_중간_프로젝트 
+변수명 정리
+
+df = 구급출동 현황 데이터
+df_col = 구급출동 현황_sample
+
+gu_total_count : 행정구별 신고빈도
+dong_total_count : 행정동별 신고빈도
+dong_20 : 신고빈도 상위 20 지역(동)
+
+df_season : 계절/월별 신고빈도 정보
+df_season_cnt : 계절별 신고빈도
+
+gu_sex : 지역별 성별 정보
+gu_sex_count : 행정구별 성별에 따른 신고빈도 정보
+dong_sex_count : 행정동별 성별에 따른 신고빈도 정보
+
+c_data: 연령대별 범주화 데이터
+age_data : c_data의 프레임 변경 데이터
+
+df_질병 : 환자 상태 및 행정지역 정보
+df_질병_gu : 구 별 환자 상태 정보
+df_질병_gu_1 : 각 구 별 환자발생유형구분명 
+df_질병_dong : 읍면동 별 환자 상태 정보 
+df_질병_dong_1 : 읍면동 별 환자발생유형구분명
+
+time_df : 출동시간 데이터 
+time_df_1 : 출동시간 정제 데이터
+time_df_20 : 출동시간 상위 20개 데이터
+
+time_upper : 상위 이상치 확인 데이터
+time_lower : 하위 이상치 확인 데이터
+time_df_2 : 중간 데이터(이상치 제거 데이터) 분석
+time_df2 : time_df 정보 살피기
+
+D_lv_** : Distance_lv 그룹화 및 그룹 연산 데이터프레임 생성
+
+time_df3 : 5km 이하 구간 재범주화
+time_df4 : 거리 재범주화 (0,4,15,100,초과)
+
+lower_outlier : 하위 이상치 데이터
+max_outlier : 상위 이상치 데이터
+time_df_new : 이상치를 처리한 데이터
+
+
+time_df_new : 이상치를 제거하여 분석에 활용할 데이터프레임
+dong_hour : 상위 20개동 시간대별 속도
+dong_day : 상위 20개동 요일별 속도
+dong_month : 상위 20개동 월별 속도
+dong_season : 상위 20개동 계절별 속도
+time_df_new_d : 구간별 분할 데이터
+distance_1 : 4km 이하 구간
+distance_2 : 4km 초과 15km이하 구간
+distance_3 : 15km 초과 100km이하 구간
+distance_4 : 100km 초과 구간
+day_hour : 요일별 시간대별 데이터
+month_hour: 월별 시간대별 데이터 
+day_month : 월별 요일별 데이터
+
+이상치 제거완료한 구간별 데이터프레임
+ - time_df4_sec1_1 : 4km 이하 구간
+ - time_df4_sec2_1 : 4km 초과 15km이하 구간
+ - time_df4_sec3_1 : 15km 초과 100km이하 구간
+구간별, 동별 평균속도 데이터프레임(요일별, 시간대별)
+ - sec1_pv : 4km 이하 구간
+ - sec2_pv : 4km 초과 15km이하 구간
+ - sec3_pv : 15km 초과 100km이하 구간
+구간별, 동별 신고수 (요일별, 시간대별)
+ - sec1_pv_cnt : 4km 이하 구간
+ - sec2_pv_cnt : 4km 초과 15km이하 구간
+ - sec3_pv_cnt : 15km 초과 100km이하 구간
+
+d1_min : 단거리에서 최소값을 적용한 변수 데이터
+d1_max : 단거리에서 최대값을 적용한 변수 데이터
+d2_min : 중거리에서 최소값을 적용한 변수 데이터
+d2_max : 중거리에서 최대값을 적용한 변수 데이터
+
+
+df_traffic : 각 월의 교통량 정보
+traffic_year : 1~12월 교통량 정보
+dong_day_sum : 동별_요일/시간대별 합계량 그룹화 정보
+dong_day_mean : 동별_요일/시간대별 평균값 그룹화 정보
+day_sum : 요일별/시간대별 합 정보
+day_mean : 요일별/시간대별 평균값 정보
+time_sum : 시간대별 교통량 합 정보
+time_mean : 시간대별 교통량 평균값 정보
+n-01 : 동별 지점 갯수
