@@ -42,7 +42,8 @@
 ![스크린샷 2023-05-10 오후 11 54 39](https://github.com/YoungMinSW/Team_project/assets/109095108/48056b26-cf59-434f-9a8f-01e0d71143f3)
 ![스크린샷 2023-05-10 오후 11 55 40](https://github.com/YoungMinSW/Team_project/assets/109095108/66d22fd9-50a5-429b-9a45-9af77e49213e)
 ![스크린샷 2023-05-10 오후 11 56 18](https://github.com/YoungMinSW/Team_project/assets/109095108/012e8f03-517f-4966-9736-b724a362b4f4)
-![스크린샷 2023-05-10 오후 11 56 38](https://github.com/YoungMinSW/Team_project/assets/109095108/56f47bb9-df23-4224-832f-817848e00862)
+![스크린샷 2023-05-10 오후 11 59 30](https://github.com/YoungMinSW/Team_project/assets/109095108/9efc80de-b42b-4331-8cfa-abcb2cc13357)
+
 
 
 
