@@ -14,8 +14,6 @@
 
 **결과** : 최우수상 1위 & 본선 입선 & 예선 탈락
 
-**(1) GitHub :** [프로젝트 분석 코드](https://github.com/YoungMinDA/Team_project/tree/main/%ED%8F%90%EC%9D%98%EC%95%BD%ED%92%88%20%EC%88%98%EA%B1%B0%EC%9C%A8%20%EC%A6%9D%EC%A7%84%EC%9D%84%20%EC%9C%84%ED%95%9C%20%ED%94%8C%EB%9E%AB%ED%8F%BC%20%EC%84%A0%EC%A0%95%20%EB%B0%8F%20%EC%9E%85%EC%A7%80%20%EB%B6%84%EC%84%9D%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8)
-
 ### 📋프로젝트 개요
 
 ---
