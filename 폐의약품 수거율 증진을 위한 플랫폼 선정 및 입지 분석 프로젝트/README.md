@@ -27,24 +27,19 @@
 - 분석 언어
 
 <aside>
-✔️ **Python**
-
+✔️Python
 - Selenium 라이브러리를 활용한 전국 GS25 편의점 정보 웹 스크래핑
     - CSRF Token 값 확인됨에 따라 수집 과정에서 무작위 문자열이 포함되는 **문제** 발생
         - **문제** 해결을 위해 requests.Session 함수를 활용하여 토큰값 고정
         - 비즈니스 모델 서비스 제공을 위한 전국 GS25 지점 정보 수집
-            
-            ![가공전.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3b8afc3b-2351-4235-8aff-43014d31c714/%EA%B0%80%EA%B3%B5%EC%A0%84.jpg)
-            
+            ![image](https://github.com/YoungMinDA/Team_project/assets/109095108/12cf0e00-d3ba-4379-9d73-4310082e3625)
 - Pandas, Numpy, Matplotlib, Seaborn 라이브러리를 활용한 EDA & 전처리
     
     > 플랫폼 입지 선정에서 생활인구수가 아닌 **폐의약품 발생량**이 중요하다고 **판단** & **가설** 수립
     > 
     - 입지 분석을 위한 GS25 데이터에서 ‘수원시’ 소속 ‘택배서비스’  제공 지점 추출
         - 효율적인 Tableau 맵 시각화를 위한 위도 & 경도 & 주소 데이터 가공
-            
-            ![rㄱ가공2.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6051d6cd-faf6-464c-8c6e-53c56a9c1ad8/r%E3%84%B1%EA%B0%80%EA%B3%B52.jpg)
-            
+            ![image](https://github.com/YoungMinDA/Team_project/assets/109095108/f7b83409-d7ff-49c5-8b6c-613736c18f5c)
     - 의약품 주성분 데이터에서 유해도가 높은 의약품 데이터 추출
         - 의약품 안전나라의 약품 코드 조회시스템을 통해 동일 성분의 의약품 확인 &  가공
     - 폐의약품 발생량 도출 & 분석의 신뢰성 ****향상을 위한 생활인구 데이터 전처리 진행
@@ -52,17 +47,16 @@
             - 폐의약품별 유해도 & 성별 & 연령별 가중치 적용
         - 폐의약품 발생률 데이터가 없는 0 ~ 19세 연령의 데이터 제거
         - 연령대별(5세 계급 → 10세 계급) 데이터 가공
-            
-            ![스크린샷 2023-08-19 오전 1.01.04.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/647d210e-4584-4c04-93d1-84969cca0449/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-08-19_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_1.01.04.png)
+            ![image](https://github.com/YoungMinDA/Team_project/assets/109095108/bbac82bf-a272-4164-b0bb-47f01e005577)
+
             
 - Scikit-learn 머신러닝 라이브러리를 활용한 생활인구에 따른 폐의약품 발생량 **예측** & **통계적 유의성** 확인
     - 성별과 연령대로 구성된 범주형 데이터셋 구조 특성상 분석의 신뢰성이 감소하는 **문제** 발생
         - 다중회귀분석의 통제변수를 위한 성별, 연령대 데이터 가공
             - 성별 : 명목척도 & 연령대 : 비율척도 → 가변수 변환(Dummy Variable)
         - 결정계수(R-squared) : 0.013, F 검정 통계량(F-statistic) : 895.6
-            
-            ![스크린샷 2023-08-15 오전 1.40.21.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dbf5a8c3-c3d3-4d9d-bb18-977b4ceaf5d8/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-08-15_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_1.40.21.png)
-            
+            ![image](https://github.com/YoungMinDA/Team_project/assets/109095108/a836c5ae-befb-49a8-8b14-0bc9b6582bbe)
+
         - **문제** 해결을 위해 서울시 도시정책 기반의 보행자 친화 접근성 기술 통계량 적용 & 신뢰성 부여 (Buffer, 150m~400m)
     - Pivot Table을 활용한 연령대별 폐의약품 발생량이 가장 많은 자치구 도출
     
@@ -71,7 +65,7 @@
 - 분석 도구
 
 <aside>
-✔️ **Tableau**
+✔️Tableau
 
 - 편의점 트렌드 리포트를 통한 국내 4사 편의점 비교 분석 **대시보드** 개발
     - 편의점을 플랫폼으로 선정한 이유
@@ -80,14 +74,16 @@
         - GS25 → 매출 1위, 위치 선호도 1위, 프로모션 선호도 1위, 점포 수 2위
         - 4사 편의점의 직관적인 비교를 위해 막대 & 파이 차트 채택
             
-            ![대시보드 1.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e27fedc3-ed32-42cf-ab2b-3789d637fe52/%E1%84%83%E1%85%A2%E1%84%89%E1%85%B5%E1%84%87%E1%85%A9%E1%84%83%E1%85%B3_1.png)
+            ![image](https://github.com/YoungMinDA/Team_project/assets/109095108/184cbbac-ae02-4c1e-8367-9d4f1628617e)
+
             
 - 입지 분석 주제에 기반한 수원시 자치구별 데이터셋 비교를 위한 맵 차트 시각화
     - 지리적 역할(시군구) 기능을 활용한 위도 & 경도 테이블 생성
     - 색상 & 레이블 기능을 활용한 자치구별 비교 인사이트 도출
     - 백그라운드 레이어 투명도 기능을 활용한 인사이트 강조
         
-        ![스크린샷 2023-08-15 오전 1.59.16.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a9afedc2-3ce9-4de3-bca0-cca7c2422918/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-08-15_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_1.59.16.png)
+        ![image](https://github.com/YoungMinDA/Team_project/assets/109095108/8a78129d-b4a7-43dc-a217-5b63c1546b9f)
+
         
 - 선정 자치구 지점 분포도 & 입지 선정 지점 시각화를 위한 맵 차트 시각화
     - 필터 → 사용자 지정 기능을 활용한 GS25 선정 지점 분류
@@ -97,13 +93,13 @@
         - 7개의 GS25 지점 선정(Buffer, 300m~700m)
         - 도출된 최종 지점 선정(Buffer, 300m)
         
-        ![스크린샷 2023-08-15 오후 12.53.56.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4252340c-20e0-4d46-b3af-38b6a86048b0/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-08-15_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_12.53.56.png)
-        
+        ![image](https://github.com/YoungMinDA/Team_project/assets/109095108/10e99879-46f2-46b4-91ed-4496487ec86a)
 
+        
 </aside>
 
 <aside>
-✔️ **QGIS**
+✔️QGIS
 
 - 행정구역 shp 파일 & GIS 건축물통합정보 데이터 업로드 후 shp 파일 생성
 - 생활인구 할당을 위한 지역구 내 격자 생성 후 총면적 계산
@@ -121,8 +117,7 @@
     - 폐의약품 발생량이 가장 많은 지역 선정 : **수원시 권선구**
     - 최우선 플랫폼 도입 지점 선정 : **GS25 수원 삼익점**
     - 플랫폼 도입 지점 후보 : GS25 구운 성원점, GS25 탑동 새롬점, GS25 서둔 햇살점,
-    
-                                              GS25 고색대성점, GS25 권선오목천점, GS25 고색리치아노점                                                       
+                            GS25 고색대성점, GS25 권선오목천점, GS25 고색리치아노점                                                       
     
 - 데이터 분석 서비스 공급을 통한 수익성 비즈니스 모델 설계
     - 수원시의 국한되지 않고 서울, 경기도 등 전국 모든 지역에 입지 분석 서비스 활성화 가능
@@ -130,7 +125,7 @@
 - 분석 결과를 바탕으로 구체적이고 실용적인 플랫폼 활성화 방안과 법안 & 정책 개선안 제시
 
 <aside>
-✔️ **프로젝트에 관한 상세한 내용을 보실 수 있습니다.**
+✔️프로젝트에 관한 상세한 내용을 보실 수 있습니다.
 
 [폐의약품 수거율 증진을 위한 플랫폼 선정 및 입지 분석 프로젝트 보고서](https://www.notion.so/7e3b49b1759f4d89a15832f7fdc7dc5b?pvs=21)
 
@@ -156,46 +151,31 @@
 
 - **제6회 청년 아이디어톤 입선 / 2023 동대문구 공공데이터 활용 정책 아이디어 공모전 최우수상 (1위)**
 
-![스크린샷 2023-07-30 오후 6.18.36.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/51930d59-b932-4206-a6ca-3ad80094a455/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-07-30_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.18.36.png)
-
-![스크린샷 2023-07-30 오후 6.18.46.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bdf73c83-dfdb-4dbd-b18d-064670f1b358/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-07-30_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.18.46.png)
-
-![스크린샷 2023-07-30 오후 6.19.00.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/04fb207d-dbed-4cce-b7d6-fa381700821c/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-07-30_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.19.00.png)
-
-![스크린샷 2023-07-30 오후 6.19.11.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c8356ffa-807c-4474-99a8-be58c4f8751d/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-07-30_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.19.11.png)
-
-![스크린샷 2023-07-30 오후 6.19.22.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b5d1efba-18ee-4d20-9f58-6677747562cb/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-07-30_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.19.22.png)
-
-![스크린샷 2023-07-30 오후 6.19.34.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/81d4f0b9-bb30-43b6-9574-10cb786bdc86/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-07-30_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.19.34.png)
-
-![스크린샷 2023-08-15 오전 10.33.00.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/31688ec3-3b19-4bf4-b43f-f67e8e40b3c5/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-08-15_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_10.33.00.png)
-
-![스크린샷 2023-07-30 오후 6.19.56.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/24900332-4659-47ef-bcda-ffdf37547f71/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-07-30_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.19.56.png)
-
-![스크린샷 2023-07-30 오후 6.20.10.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7b6467e4-bf9b-49f0-8aa3-5e6db8868998/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-07-30_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.20.10.png)
-
-![스크린샷 2023-07-30 오후 6.20.19.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fbbd23c3-8fd5-4e01-a068-c6e5395a4dfd/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-07-30_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.20.19.png)
-
-![스크린샷 2023-07-30 오후 6.20.30.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/521c337a-1610-4880-9cfe-fbee73fbf962/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-07-30_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.20.30.png)
-
-![스크린샷 2023-07-30 오후 6.20.41.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/faf804a3-b835-447e-9379-b92ebaa6372f/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-07-30_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.20.41.png)
-
-![스크린샷 2023-07-30 오후 6.20.50.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f581319a-93a6-447a-9001-48b615dce525/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-07-30_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.20.50.png)
-
-![스크린샷 2023-07-30 오후 6.20.58.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ba2fd83c-4b4c-48e3-8735-4083d77c89fd/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-07-30_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.20.58.png)
-
-![스크린샷 2023-07-30 오후 6.21.07.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/adf00759-123d-438f-a70a-3db8c3d7ae13/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-07-30_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.21.07.png)
-
-![스크린샷 2023-07-30 오후 6.21.16.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f574e3f6-b9fc-4680-874e-a7a4c28294b5/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-07-30_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.21.16.png)
-
-![스크린샷 2023-07-30 오후 6.21.25.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1cfca416-a1fc-4e6e-bb7f-bc9ae3f82e27/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-07-30_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.21.25.png)
-
-![스크린샷 2023-08-13 오후 6.40.36.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c72c604d-ee47-4ae8-a117-16f5ea7a6458/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-08-13_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.40.36.png)
+![image](https://github.com/YoungMinDA/Team_project/assets/109095108/13405cdb-3f4f-443a-a893-be5cab7de5d2)
+![image](https://github.com/YoungMinDA/Team_project/assets/109095108/3c800ef6-4e0c-4b7c-b4bb-afed76353b97)
+![image](https://github.com/YoungMinDA/Team_project/assets/109095108/d9ba3ed3-3c22-40ae-a420-2f1581e14a8a)
+![image](https://github.com/YoungMinDA/Team_project/assets/109095108/274bc1aa-c89f-4d61-9432-b89c261f8959)
+![image](https://github.com/YoungMinDA/Team_project/assets/109095108/7d6f918f-4198-42f6-b54b-018d13d49a4b)
+![image](https://github.com/YoungMinDA/Team_project/assets/109095108/c087d555-df3d-4f01-a4fe-e8a0a2f5ec5a)
+![image](https://github.com/YoungMinDA/Team_project/assets/109095108/754e9c01-25f1-40e1-9694-3dcebd406e1d)
+![image](https://github.com/YoungMinDA/Team_project/assets/109095108/7e0b3215-7099-4f19-b6fc-ac4dc6328bf1)
+![image](https://github.com/YoungMinDA/Team_project/assets/109095108/11d0a70d-d02c-4ab5-a41a-61bdeea03ba7)
+![image](https://github.com/YoungMinDA/Team_project/assets/109095108/336986b5-dddf-4d5f-93c6-df39ad96bf3c)
+![image](https://github.com/YoungMinDA/Team_project/assets/109095108/0408681c-74f7-4af7-b887-4bc1c7d4230e)
+![image](https://github.com/YoungMinDA/Team_project/assets/109095108/bffc085a-7395-4448-b0e5-06999d8b4e2f)
+![image](https://github.com/YoungMinDA/Team_project/assets/109095108/dcbef710-cfde-4ad1-9b2b-3dd5280d3a0b)
+![image](https://github.com/YoungMinDA/Team_project/assets/109095108/805d15e0-a7f2-4127-91d8-9a0af90c97d6)
+![image](https://github.com/YoungMinDA/Team_project/assets/109095108/2e368e4c-21a6-4ed3-8742-ec98cbdbe42f)
+![image](https://github.com/YoungMinDA/Team_project/assets/109095108/8f9c3a1f-a800-40e4-a7b5-ee650804cf82)
+![image](https://github.com/YoungMinDA/Team_project/assets/109095108/05a352a2-8e88-4f83-94a5-2a8369469b42)
 
 - **제6회 전국 청년 아이디어톤 대회, 입선**
     
-    ![2.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/c1fdcefb-7962-458e-a778-eb23001249d7/61e6ec6a-fa7e-4a9c-8e89-d9ddbcaae58e/2.jpg)
-    
+    ![image](https://github.com/YoungMinDA/Team_project/assets/109095108/b7a8eb5a-aa02-4c72-8f32-4db951f4d80e)
+    ![image](https://github.com/YoungMinDA/Team_project/assets/109095108/25f19bd4-f468-47b0-a41a-f6a4bbdd8256)
+
+
 - **동대문구 공공데이터 활용 정책 아이디어 공모전, 최우수상 1위**
     
     ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c1fdcefb-7962-458e-a778-eb23001249d7/c3c61b2c-a7be-4cbb-9e36-98c7f0720ec6/Untitled.jpeg)
+    ![image](https://github.com/YoungMinDA/Team_project/assets/109095108/b786b91a-b693-4c2f-a6ac-ab547a3e1f11)
