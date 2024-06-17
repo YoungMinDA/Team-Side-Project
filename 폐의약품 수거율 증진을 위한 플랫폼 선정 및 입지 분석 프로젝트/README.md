@@ -34,12 +34,10 @@
         - 비즈니스 모델 서비스 제공을 위한 전국 GS25 지점 정보 수집
             ![image](https://github.com/YoungMinDA/Team_project/assets/109095108/12cf0e00-d3ba-4379-9d73-4310082e3625)
 - Pandas, Numpy, Matplotlib, Seaborn 라이브러리를 활용한 EDA & 전처리
-    
-    > 플랫폼 입지 선정에서 생활인구수가 아닌 **폐의약품 발생량**이 중요하다고 **판단** & **가설** 수립
-    > 
+    - 플랫폼 입지 선정에서 생활인구수가 아닌 **폐의약품 발생량**이 중요하다고 **판단** & **가설** 수립 
     - 입지 분석을 위한 GS25 데이터에서 ‘수원시’ 소속 ‘택배서비스’  제공 지점 추출
         - 효율적인 Tableau 맵 시각화를 위한 위도 & 경도 & 주소 데이터 가공
-            ![image](https://github.com/YoungMinDA/Team_project/assets/109095108/f7b83409-d7ff-49c5-8b6c-613736c18f5c)
+            ![image](https://github.com/YoungMinDA/Team_project/assets/109095108/374d6cbe-a15c-490c-bea2-68d26e0c019e)
     - 의약품 주성분 데이터에서 유해도가 높은 의약품 데이터 추출
         - 의약품 안전나라의 약품 코드 조회시스템을 통해 동일 성분의 의약품 확인 &  가공
     - 폐의약품 발생량 도출 & 분석의 신뢰성 ****향상을 위한 생활인구 데이터 전처리 진행
@@ -47,9 +45,8 @@
             - 폐의약품별 유해도 & 성별 & 연령별 가중치 적용
         - 폐의약품 발생률 데이터가 없는 0 ~ 19세 연령의 데이터 제거
         - 연령대별(5세 계급 → 10세 계급) 데이터 가공
-            ![image](https://github.com/YoungMinDA/Team_project/assets/109095108/bbac82bf-a272-4164-b0bb-47f01e005577)
-
-            
+            ![image](https://github.com/YoungMinDA/Team_project/assets/109095108/bfe41e60-3b0b-482b-84e4-b3b448e63a8a)   
+    
 - Scikit-learn 머신러닝 라이브러리를 활용한 생활인구에 따른 폐의약품 발생량 **예측** & **통계적 유의성** 확인
     - 성별과 연령대로 구성된 범주형 데이터셋 구조 특성상 분석의 신뢰성이 감소하는 **문제** 발생
         - 다중회귀분석의 통제변수를 위한 성별, 연령대 데이터 가공
